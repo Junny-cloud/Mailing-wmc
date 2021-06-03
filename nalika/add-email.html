@@ -59,6 +59,28 @@
     <!-- responsive CSS
 		============================================ -->
     <link rel="stylesheet" href="css/responsive.css">
+
+
+    <style>
+        .html-editor textarea.form-control {
+            height: 300px;
+            font-weight: 400
+        }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119386393-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-119386393-1');
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="vendor/vendors/styles/icon-font.min.css">
+
     <!-- modernizr JS
 		============================================ -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -437,8 +459,11 @@
                                             </div>
                                             <div class="panel-body no-padding">
                                                 <div class="form-group">
-                                                    <label for="exampleFormControlTextarea1">Contenu</label>
-                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+                                                    <div class="html-editor pd-20 card-box mb-30">
+                                                        <h4 class="h4 text-blue">bootstrap wysihtml5</h4>
+                                                        <p>Simple, beautiful wysiwyg editors</p>
+                                                        <textarea class="textarea_editor form-control border-radius-0" placeholder="Enter text ..."></textarea>
+                                                    </div>
                                                 </div>
                                             </div>
 
@@ -547,6 +572,10 @@
     <!-- main JS
 		============================================ -->
     <script src="js/main.js"></script>
+    <script src="vendor/vendors/scripts/core.js"></script>
+    <script src="vendor/vendors/scripts/script.min.js"></script>
+    <script src="vendor/vendors/scripts/process.js"></script>
+    <script src="vendor/vendors/scripts/layout-settings.js"></script>
 </body>
 
 </html>
